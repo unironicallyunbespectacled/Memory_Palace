@@ -1,4 +1,4 @@
-import { Palace } from '../types';
+import type { Palace } from '../types';
 import { Building2, Calendar, BrainCircuit, Play } from 'lucide-react';
 
 export function PalaceCard({ palace, onWalk, onQuiz }: { palace: Palace, onWalk: () => void, onQuiz: () => void }) {

@@ -1,4 +1,4 @@
-import { Palace, Room, Concept } from './types';
+import type { Palace, Room } from './types';
 
 const SYSTEM_PROMPT = `
 You are the Memory Palace Architect. You use the method of loci to generate vivid, grotesque, and spatially coherent memory palaces for learning frameworks.

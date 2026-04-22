@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Palace } from '../types';
+import type { Palace } from '../types';
 import { ArrowLeft, Eye, CheckCircle } from 'lucide-react';
 import { usePalaceStore } from '../useStore';
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Palace } from './types';
+import type { Palace } from './types';
 
 // We prefix the key so it doesn't collide with other apps the user might run
 const STORAGE_KEY = 'memory-palace-architect-v1';

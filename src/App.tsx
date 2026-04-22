@@ -7,7 +7,7 @@ import { NewPalaceModal } from './components/NewPalaceModal';
 import { SettingsModal } from './components/SettingsModal';
 import { Walkthrough } from './components/Walkthrough';
 import { Quiz } from './components/Quiz';
-import { Palace } from './types';
+import type { Palace } from './types';
 
 function App() {
   const store = usePalaceStore();

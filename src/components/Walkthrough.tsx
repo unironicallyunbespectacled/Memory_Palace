@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Palace } from '../types';
+import type { Palace } from '../types';
 import { ArrowLeft, ArrowRight, Eye, Ear, Wind, Hand, Coffee, CheckCircle } from 'lucide-react';
 
 export function Walkthrough({ palace, onBack }: { palace: Palace, onBack: () => void }) {
