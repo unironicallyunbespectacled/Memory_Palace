@@ -1,6 +1,6 @@
 # Memory Palace Architect - Progress Ledger
 
-**CURRENT STATUS:** Implementing Core Design System (CSS).
+**CURRENT STATUS:** Setting up Domain Models (Phase 2).
 
 If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTION**.
 
@@ -10,10 +10,10 @@ If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTI
   - [x] Initialized this `PROGRESS_LOG.md`.
   - [x] Initialize Vite (React + TS).
   - [x] Push Phase 0 to GitHub.
-- [ ] **Phase 1:** Core Design System ("The Big Book" 2026 Standards)
-  - [ ] Set up CSS Variables (OKLCH, Fluid Typography).
-  - [ ] Implement Chromatic Glass effect utilities.
-  - [ ] Push Phase 1 to GitHub.
+- [x] **Phase 1:** Core Design System ("The Big Book" 2026 Standards)
+  - [x] Set up CSS Variables (OKLCH, Fluid Typography).
+  - [x] Implement Chromatic Glass effect utilities.
+  - [x] Push Phase 1 to GitHub.
 - [ ] **Phase 2:** Domain Models & Data Architecture
   - [ ] Define TypeScript types for Palace, Room, Concept.
   - [ ] Set up LocalStorage persistence logic.

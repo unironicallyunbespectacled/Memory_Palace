@@ -1,121 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from 'react';
+import { Building2, Plus, Settings } from 'lucide-react';
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
+    <div style={{ 
+      minHeight: '100dvh', 
+      padding: 'var(--space-6)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 'var(--space-8)'
+    }}>
+      
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+          <h1 className="text-title" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <Building2 size={32} color="var(--color-primary)" />
+            Memory Palace Architect
+          </h1>
+          <p className="text-body" style={{ marginTop: 'var(--space-1)' }}>Spatial memory mapping with 2026 aesthetics.</p>
+        </div>
+        
+        <button 
+          className="chromatic-glass touch-target" 
+          style={{ 
+            border: 'none', 
+            borderRadius: 'var(--radius-pill)', 
+            padding: 'var(--space-2) var(--space-4)',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 'var(--space-2)',
+            color: 'var(--color-text)',
+            fontWeight: '600'
+          }}
+        >
+          <Plus size={20} />
+          <span>New Palace</span>
+        </button>
+      </header>
+
+      <main className="bento-grid">
+        <div className="chromatic-glass bento-span-2" style={{ padding: 'var(--space-6)', display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+          <h2 style={{ fontSize: 'var(--text-xl)' }}>Liquid Glass & OKLCH Demo</h2>
+          <p className="text-body">
+            This UI is built entirely without traditional CSS frameworks. It uses native CSS nesting, `oklch()` color spaces for mathematically uniform perceptual gradients, and CSS `clamp()` for truly fluid typography. 
+            The borders of this very panel simulate the "Liquid Glass" chromatic aberration.
           </p>
         </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        
+        <div className="chromatic-glass" style={{ padding: 'var(--space-6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <p className="text-body" style={{ textAlign: 'center' }}>Space for Recent Palaces</p>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+        
+        <div className="chromatic-glass" style={{ padding: 'var(--space-6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <p className="text-body" style={{ textAlign: 'center' }}>Space for Analytics/Decay</p>
         </div>
-      </section>
+      </main>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
