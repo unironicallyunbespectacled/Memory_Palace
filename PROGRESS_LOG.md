@@ -1,6 +1,6 @@
 # Memory Palace Architect - Progress Ledger
 
-**CURRENT STATUS:** Building the Library View UI (Phase 4).
+**CURRENT STATUS:** Building the Spatial Walkthrough UI (Phase 5).
 
 If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTION**.
 
@@ -22,10 +22,10 @@ If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTI
   - [x] Build mock generator / input form for User's Gemini API Key.
   - [x] Build generation prompt logic (sensory layer mapping).
   - [x] Push Phase 3 to GitHub.
-- [ ] **Phase 4:** User Interface - Library View
-  - [ ] List all Palaces (Bento grid adaptation).
-  - [ ] UI for API Key Input.
-  - [ ] Push Phase 4 to GitHub.
+- [x] **Phase 4:** User Interface - Library View
+  - [x] List all Palaces (Bento grid adaptation).
+  - [x] UI for API Key Input.
+  - [x] Push Phase 4 to GitHub.
 - [ ] **Phase 5:** User Interface - Spatial Walkthrough
   - [ ] Visual mapping component (Canvas/SVG).
   - [ ] Concept rendering.
