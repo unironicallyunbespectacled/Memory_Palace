@@ -5,11 +5,22 @@ import { usePalaceStore } from './useStore';
 import { PalaceCard } from './components/PalaceCard';
 import { NewPalaceModal } from './components/NewPalaceModal';
 import { SettingsModal } from './components/SettingsModal';
+import { Walkthrough } from './components/Walkthrough';
+import { Palace } from './types';
 
 function App() {
   const store = usePalaceStore();
   const [showNewModal, setShowNewModal] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [activePalace, setActivePalace] = useState<Palace | null>(null);
+
+  if (activePalace) {
+    return (
+      <div style={{ minHeight: '100dvh', padding: 'var(--space-6)' }}>
+        <Walkthrough palace={activePalace} onBack={() => setActivePalace(null)} />
+      </div>
+    );
+  }
 
   return (
     <div style={{ 
@@ -69,7 +80,7 @@ function App() {
         ) : (
           <div className="bento-grid">
             {store.palaces.map(palace => (
-              <PalaceCard key={palace.id} palace={palace} onClick={() => alert('Walkthrough mode coming in Phase 5!')} />
+              <PalaceCard key={palace.id} palace={palace} onClick={() => setActivePalace(palace)} />
             ))}
           </div>
         )}
