@@ -1,6 +1,6 @@
 # Memory Palace Architect - Progress Ledger
 
-**CURRENT STATUS:** Setting up Domain Models (Phase 2).
+**CURRENT STATUS:** Implementing AI Generator Integration (Phase 3).
 
 If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTION**.
 
@@ -14,10 +14,10 @@ If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTI
   - [x] Set up CSS Variables (OKLCH, Fluid Typography).
   - [x] Implement Chromatic Glass effect utilities.
   - [x] Push Phase 1 to GitHub.
-- [ ] **Phase 2:** Domain Models & Data Architecture
-  - [ ] Define TypeScript types for Palace, Room, Concept.
-  - [ ] Set up LocalStorage persistence logic.
-  - [ ] Push Phase 2 to GitHub.
+- [x] **Phase 2:** Domain Models & Data Architecture
+  - [x] Define TypeScript types for Palace, Room, Concept.
+  - [x] Set up LocalStorage persistence logic.
+  - [x] Push Phase 2 to GitHub.
 - [ ] **Phase 3:** Artificial Intelligence Integration
   - [ ] Build mock generator / input form for User's Gemini API Key.
   - [ ] Build generation prompt logic (sensory layer mapping).
