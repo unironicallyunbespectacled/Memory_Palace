@@ -1,6 +1,6 @@
 # Memory Palace Architect - Progress Ledger
 
-**CURRENT STATUS:** Building the Spatial Walkthrough UI (Phase 5).
+**CURRENT STATUS:** Building Quiz Mode (Phase 6).
 
 If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTION**.
 
@@ -26,10 +26,10 @@ If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTI
   - [x] List all Palaces (Bento grid adaptation).
   - [x] UI for API Key Input.
   - [x] Push Phase 4 to GitHub.
-- [ ] **Phase 5:** User Interface - Spatial Walkthrough
-  - [ ] Visual mapping component (Canvas/SVG).
-  - [ ] Concept rendering.
-  - [ ] Push Phase 5 to GitHub.
+- [x] **Phase 5:** User Interface - Spatial Walkthrough
+  - [x] Visual mapping component (Canvas/SVG).
+  - [x] Concept rendering.
+  - [x] Push Phase 5 to GitHub.
 - [ ] **Phase 6:** User Interface - Quiz Mode & Polish
   - [ ] Assessment logic (reverse, spatial queries).
   - [ ] Push Phase 6 to GitHub.

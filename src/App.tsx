@@ -6,18 +6,29 @@ import { PalaceCard } from './components/PalaceCard';
 import { NewPalaceModal } from './components/NewPalaceModal';
 import { SettingsModal } from './components/SettingsModal';
 import { Walkthrough } from './components/Walkthrough';
+import { Quiz } from './components/Quiz';
 import { Palace } from './types';
 
 function App() {
   const store = usePalaceStore();
   const [showNewModal, setShowNewModal] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [activePalace, setActivePalace] = useState<Palace | null>(null);
+  
+  const [activeWalkthrough, setActiveWalkthrough] = useState<Palace | null>(null);
+  const [activeQuiz, setActiveQuiz] = useState<Palace | null>(null);
 
-  if (activePalace) {
+  if (activeWalkthrough) {
     return (
       <div style={{ minHeight: '100dvh', padding: 'var(--space-6)' }}>
-        <Walkthrough palace={activePalace} onBack={() => setActivePalace(null)} />
+        <Walkthrough palace={activeWalkthrough} onBack={() => setActiveWalkthrough(null)} />
+      </div>
+    );
+  }
+
+  if (activeQuiz) {
+    return (
+      <div style={{ minHeight: '100dvh', padding: 'var(--space-6)' }}>
+        <Quiz palace={activeQuiz} onBack={() => setActiveQuiz(null)} store={store} />
       </div>
     );
   }
@@ -80,7 +91,12 @@ function App() {
         ) : (
           <div className="bento-grid">
             {store.palaces.map(palace => (
-              <PalaceCard key={palace.id} palace={palace} onClick={() => setActivePalace(palace)} />
+              <PalaceCard 
+                key={palace.id} 
+                palace={palace} 
+                onWalk={() => setActiveWalkthrough(palace)} 
+                onQuiz={() => setActiveQuiz(palace)}
+              />
             ))}
           </div>
         )}
