@@ -1,6 +1,6 @@
 # Memory Palace Architect - Progress Ledger
 
-**CURRENT STATUS:** Implementing AI Generator Integration (Phase 3).
+**CURRENT STATUS:** Building the Library View UI (Phase 4).
 
 If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTION**.
 
@@ -18,12 +18,13 @@ If your laptop crashes, refer to the **LAST COMPLETED STEP** and the **NEXT ACTI
   - [x] Define TypeScript types for Palace, Room, Concept.
   - [x] Set up LocalStorage persistence logic.
   - [x] Push Phase 2 to GitHub.
-- [ ] **Phase 3:** Artificial Intelligence Integration
-  - [ ] Build mock generator / input form for User's Gemini API Key.
-  - [ ] Build generation prompt logic (sensory layer mapping).
-  - [ ] Push Phase 3 to GitHub.
+- [x] **Phase 3:** Artificial Intelligence Integration
+  - [x] Build mock generator / input form for User's Gemini API Key.
+  - [x] Build generation prompt logic (sensory layer mapping).
+  - [x] Push Phase 3 to GitHub.
 - [ ] **Phase 4:** User Interface - Library View
   - [ ] List all Palaces (Bento grid adaptation).
+  - [ ] UI for API Key Input.
   - [ ] Push Phase 4 to GitHub.
 - [ ] **Phase 5:** User Interface - Spatial Walkthrough
   - [ ] Visual mapping component (Canvas/SVG).
